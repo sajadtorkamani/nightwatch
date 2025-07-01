@@ -4,9 +4,9 @@ namespace Laravel\Nightwatch;
 
 use RuntimeException;
 
+use function hash;
 use function in_array;
 use function strlen;
-use function hash;
 
 /**
  * @internal

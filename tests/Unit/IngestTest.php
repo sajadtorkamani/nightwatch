@@ -577,7 +577,7 @@ class StreamWrapper
 
     public static function reset(): void
     {
-        static::$events = new Collection();
+        static::$events = new Collection;
 
         static::$on = [
             'stream_open' => fn (string $path, string $mode, int $options, ?string &$openedPath): bool => true,

@@ -69,7 +69,7 @@ class PayloadTest extends TestCase
 
         try {
             $payload->pull();
-            throw new RuntimeException();
+            throw new RuntimeException;
         } catch (Throwable $e) {
             $this->assertSame('Payload has already been read', $e->getMessage());
         }
